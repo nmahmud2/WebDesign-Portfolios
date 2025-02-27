@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+    color: white;
+}
+
+#song {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.moon {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 10px;
+        right: 700px
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+hr {
+    margin-bottom: 15px;
+}
+
+p {
+    font-family: "Be Vietnam Pro", serif;
+    font-style: italic;
+    font-size: 35px;
+    margin-bottom: 5px;
+    font-weight: 200;
+}
+
+.wind {
+    color: #c3cde0;
+    transition: all 5s;
+}
+
+.wind:hover {
+    opacity: 0.2;
+    cursor:pointer
+}
+
+.water {
+    color: #abc5f5;
+    transition: all 1s;
+
+}
+
+.son {
+    color: #466fbd;
+    transition: all 2s;
+}
+
+.son:hover {
+    opacity: 0;
+    cursor:pointer
+}
+
+.daughter {
+    color: #466fbd;
+    transition: all 2s;
+}
+
+.daughter:hover {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.cloud1 {
+    width: 300px;
+    opacity: 0.7;
+    position: absolute;
+    top: 170px;
+    right: 200px;
+    animation: moveleft 7s 0s infinite alternate;
+}
+
+@keyframes moveleft {
+    0% {right: 200px}
+    50% {right: 500px}
+    100% {right: 800px}
+   
+}
+
+.cloud2 {
+    width: 300px;
+    opacity: 0.7;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    animation: moveright 10s 0s infinite alternate;
+}
+
+@keyframes moveright {
+    0% {left: 100px}
+    50% {left: 600px}
+    100% {left: 1000px}
+   
+}
+
+.water {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100vh;
+    height: 150px;
+}
+
+.water2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vh;
+    height: 150px;
+}
