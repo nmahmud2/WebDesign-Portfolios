@@ -1,0 +1,132 @@
+/* PAGE 5 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #ffe0a6; 
+    color: #4a230a; 
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #4a230a; 
+}
+
+hr {
+    margin: 20px 50px;
+    border: none;
+    height: 1px; 
+    background-color: #4a230a; 
+}
+
+.flex-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.column {
+    width: 30%;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.column:hover {
+    transform: translateY(-5px); 
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #4a230a;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 32px;
+    color: #4a230a;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 1.6;
+    color: black;
+}
+
+.pic1, .pic2, .pic3 {
+    margin: 20px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#twelvetone {
+    margin-bottom: 20px;
+}
+
+a {
+    background-color: #8c5634; 
+    color: white;             
+    border: none;             
+    padding: 15px 32px;       
+    text-align: center;        
+    text-decoration: none;   
+    display: inline-block;     
+    font-size: 16px;          
+    cursor: pointer;         
+    border-radius: 8px;        
+    transition: background-color 0.3s ease; 
+}
+
+a:hover { 
+    background-color: #4a230a;
+}
+
+h2 {
+    text-align: center;
+    color: #4a230a; 
+}
+
+.end p, h2, a {
+    margin: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .flex-area {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .pic1, .pic2, .pic3 {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
